@@ -1,0 +1,12 @@
+[user]
+	email = watanabexy@gmail.com
+	name = nasusan
+[core]
+	editor = vim
+	autocrlf = true
+[alias]
+	co = checkout
+	st = status
+	b = branch
+	g = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	ga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
