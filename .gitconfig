@@ -1,12 +1,19 @@
 [user]
-	email = watanabexy@gmail.com
 	name = nasusan
+	email = watanabexy@gmail.com
 [core]
-	editor = vim
 	autocrlf = true
+	excludesfile = c:\\users\\codegeass\\documents\\gitignore_global.txt
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
 [alias]
-	co = checkout
+	ch = checkout
+	co = commit
 	st = status
 	b = branch
 	g = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	ga = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[gui]
+	recentrepo = D:/GitRepos/CheckMyAct
