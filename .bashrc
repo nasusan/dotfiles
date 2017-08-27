@@ -3,7 +3,7 @@
 
 alias ls='ls --color=auto -al'
 alias ll='ls -al'
-alias cdg='cd /d/Gitrepos/'
+alias l='ls -CF'
 
 HISTSIZE=50000
 
