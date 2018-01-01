@@ -1,57 +1,4 @@
-"
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" Note: Skip initialization for vim-tiny or vim-small.
-"if 0 | endif
-"
-"filetype off
-"
-"if has('vim_starting')
-"  if &compatible
-"    set nocompatible               " Be iMproved
-"  endif
-"
-"  set runtimepath+=~/.vim/bundle/neobundle.vim
-"endif
-"
-"call neobundle#begin(expand('~/.vim/bundle/'))
-"
-"" originalrepos on github
-"NeoBundle 'Shougo/neobundle.vim'
-"NeoBundle 'Shougo/vimproc', {
-"  \ 'build' : {
-"    \ 'windows' : 'make -f make_mingw32.mak',
-"    \ 'cygwin' : 'make -f make_cygwin.mak',
-"    \ 'mac' : 'make -f make_mac.mak',
-"    \ 'unix' : 'make -f make_unix.mak',
-"  \ },
-"  \ }
-""NeoBundle 'VimClojure'
-""NeoBundle 'Shougo/vimshell'
-""NeoBundle 'Shougo/unite.vim'
-""NeoBundle 'Shougo/neocomplcache'
-""NeoBundle 'Shougo/neosnippet'
-""NeoBundle 'Shougo/neosnippet-snippets'
-""NeoBundle 'jpalardy/vim-slime'
-""NeoBundle 'scrooloose/syntastic'
-""NeoBundle 'Shougo/vimfiler.vim'
-""NeoBundle 'itchyny/lightline.vim'
-""NeoBundle 't9md/vim-textmanip'
-""
-""NeoBundle 'Shougo/unite.vim'
-""NeoBundle 'ujihisa/unite-colorscheme'
-""NeoBundle 'tomasr/molokai'
-""NeoBundle 'Lokaltog/vim-powerline'
-""NeoBundle 'https://bitbucket.org/kovisoft/slimv'
-"
-"call neobundle#end()
-"
-"filetype plugin indent on     " required!
-"filetype indent on
-"syntax on
-"
-"NeoBundleCheck
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+colorscheme elflord
 set number		"　行番号を表示
 set autoindent	"　改行後に前の行インデントを継続する
 set autoread	"　外部でファイルが編集された場合は読み直す
@@ -88,8 +35,8 @@ autocmd InsertLeave * set iminsert=0 imsearch=0
 "key mapping
 imap <c-j> <esc>
 nnoremap Y y$	"　カーソルから行末までをヤンク
-nnoremap + <C-a>"　数値のインクリメントを+に
-nnoremap - <C-x>"　数値のデクリメントを-に
+"nnoremap + <C-a>"　数値のインクリメントを+に
+"nnoremap - <C-x>"　数値のデクリメントを-に
 
 "バイナリ編集(xxd)モード（vim -b での起動、もしくは *.bin ファイルを開くと発動します）
 "augroup BinaryXXD
