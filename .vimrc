@@ -2,6 +2,8 @@ syntax on
 colorscheme elflord
 "行番号を表示
 set number
+"デフォルトの改行コード
+set fileformat=dos
 "改行後に前の行インデントを継続する
 set autoindent
 "外部でファイルが編集された場合は読み直す
@@ -59,6 +61,8 @@ set history=10000
 "https://github.com/vim-jp/issues/issues/90
 "https://qiita.com/morinatsu/items/f3cf8f3de725546a8026
 set shellpipe=
+"日本語ヘルプの優先度を上げる
+:set helplang=ja,en
 "InsertModeを抜けたとき日本語入力をオフにする
 autocmd InsertLeave * set iminsert=0 imsearch=0
 
@@ -79,7 +83,6 @@ nnoremap Y y$
 "augroup END
 
 "encoding
-
 let &termencoding = &encoding
 set encoding=utf-8
 
