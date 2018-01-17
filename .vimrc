@@ -1,5 +1,7 @@
 syntax on
-colorscheme elflord
+"colorscheme elflord
+"colorscheme molokai
+colorscheme twilight
 "行番号を表示
 set number
 "改行後に前の行インデントを継続する
