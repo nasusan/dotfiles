@@ -63,6 +63,29 @@ set history=10000
 "https://github.com/vim-jp/issues/issues/90
 "https://qiita.com/morinatsu/items/f3cf8f3de725546a8026
 set shellpipe=
+
+"statusline
+"ファイル名表示
+set statusline=%F
+"ファイル変更チェック
+set statusline+=%m
+"読み込み専用
+set statusline+=%r
+"ヘルプページ
+set statusline+=%h
+"以下の設定は右寄せ
+set statusline+=%=
+"フィルタイプ
+set statusline+=[%Y]
+"エンコーディング
+set statusline+=[%{&fileencoding}]
+"改行コード
+set statusline+=[%{&fileformat}]
+"現在行・全行数
+set statusline+=%l/%L,%c
+"ステータスラインを常に表示
+set laststatus=2
+
 "日本語ヘルプの優先度を上げる
 :set helplang=ja,en
 "InsertModeを抜けたとき日本語入力をオフにする
@@ -89,7 +112,6 @@ let &termencoding = &encoding
 set encoding=utf-8
 
 "yank
-
 if has('gui') || has('xterm_clipboard')
 set clipboard=unnamed
 endif
