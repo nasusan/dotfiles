@@ -1,1 +1,4 @@
+# 補完時通知音なし
 set bell-style none
+# 補完時大文字小文字の区別なし
+set completion-ignore-case on
