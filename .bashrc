@@ -23,6 +23,7 @@ HISTSIZE=50000
 export LS_COLORS='di=01;36:'
 export HISTCONTROL=ignoredups
 
+# for thinkpad
 # disable touchpad
 xinput disable 11
 
