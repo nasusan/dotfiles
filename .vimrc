@@ -113,13 +113,15 @@ set encoding=utf-8
 
 "yank
 if has('gui') || has('xterm_clipboard')
-set clipboard=unnamed
+"windows環境でクリップボードを使用できるようにする
+"set clipboard=unnamed
+"linux環境でクリップボードを使用できるようにする
+set clipboard=unnamedplus
 endif
 
 "行末の空白をハイライトする
-augroup HighlightTrailingSpaces
-	autocmd!
-	autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Red ctermbg=Red
-	autocmd VimEnter,WinEnter * match TrailingSpaces /\t\+\|\s\+$/
-augroup END
-
+"augroup HighlightTrailingSpaces
+"	autocmd!
+"	autocmd VimEnter,WinEnter,ColorScheme * highlight TrailingSpaces term=underline guibg=Red ctermbg=Red
+"	autocmd VimEnter,WinEnter * match TrailingSpaces /\t\+\|\s\+$/
+"augroup END
